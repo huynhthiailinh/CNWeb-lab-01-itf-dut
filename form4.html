@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function changeBackgroundColor() {
+        document.bgColor = document.form4.color.value;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="change-background-color">
+      <div class="container">
+        <form name="form4" action="">
+          <input type="text" name="color" id="" />
+          <input
+            class="button"
+            type="button"
+            value="OK"
+            onclick="changeBackgroundColor()"
+            name="ok"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+  <style>
+    #change-background-color {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #change-background-color .button:hover {
+      cursor: pointer;
+      background-color: aquamarine;
+    }
+
+    #change-background-color .button:active {
+      cursor: pointer;
+      background-color: aquamarine;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    #change-background-color .button {
+      font-weight: bold;
+      font-size: 16px;
+      background-color: blanchedalmond;
+      border-radius: 5px;
+      box-shadow: 0 5px #999;
+    }
+  </style>
+</html>

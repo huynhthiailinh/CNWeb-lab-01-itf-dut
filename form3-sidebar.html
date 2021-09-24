@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div class="container">
+        <div class="left">
+          <div class="information">
+            <div class="title">K. Công nghệ thông tin</div>
+            <div class="accordion">
+              <a class="nav-item" href="itf-notification.html" target="content">Thông báo</a>
+              <a class="nav-item" href="itf-news.html" target="content">Tin tức hoạt động</a>
+              <a class="nav-item" href="itf-notification.html" target="content">Đào tạo đại học</a>
+              <a class="nav-item" href="itf-notification.html" target="content">Đào tạo sau đại học</a>
+              <a class="nav-item" href="itf-notification.html" target="content">Nghiên cứu khoa học</a>
+              <a class="nav-item" href="itf-notification.html" target="content">Biểu mẫu của Khoa</a>
+              <a class="nav-item" href="itf-notification.html" target="content">Góp ý với Khoa</a>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="title">
+              <i class="fas fa-graduation-cap icon"></i>
+              Thông tin liên hệ
+            </div>
+            <ul class="accordion">
+              <div class="head contact-item">Khoa Công nghệ thông tin</div>
+              <div class="content contact-item">
+                <i class="fas fa-map-marker-alt icon"></i>
+                54 Nguyễn Lương Bằng, Quận Liên Chiểu, Thành phố Đà Nẵng
+              </div>
+              <div class="content contact-item">
+                <i class="fas fa-tty icon"></i>
+                (+84.0236) 3736949
+              </div>
+              <div class="content contact-item">
+                <i class="fas fa-envelope icon"></i>
+                cntt@dut.udn.vn
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 13px;
+      line-height: 1.5em;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      width: 1170px;
+    }
+
+    #main {
+      display: flex;
+      justify-content: center;
+    }
+
+    #main .container {
+      display: flex;
+    }
+
+    #main .left {
+      flex: 1;
+    }
+
+    #main .left .information .title {
+      height: 43px;
+      line-height: 43px;
+    }
+
+    #main .left .contact .title {
+      height: 37px;
+      line-height: 37px;
+    }
+
+    #main .left .title {
+      font-size: 15px;
+      color: #106cb2;
+      text-transform: uppercase;
+      font-weight: 600;
+      border: 1px solid #e6e6e6;
+      border-bottom: none;
+      padding-left: 15px;
+    }
+
+    #main .left .contact .title .icon {
+      color: #000;
+      font-size: 20px;
+    }
+
+    #main .left .accordion {
+      margin: 0;
+      padding: 0;
+      border: 1px solid #eaeaea;
+    }
+
+    #main .left .nav-item:hover {
+      background-color: #106cb2;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    #main .left .nav-item {
+      border-bottom: 1px dashed #c9c9c9;
+      display: block;
+      padding: 12px 15px;
+      font-weight: 600;
+      font-size: 14px;
+      color: #222222;
+      text-decoration: none;
+    }
+
+    #main .left .nav-item:last-child {
+      border: none;
+    }
+
+    #main .left .nav-item a:active {
+      text-decoration: none;
+    }
+
+    #main .left .nav-item a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    #main .left .contact {
+      margin-top: 20px;
+    }
+
+    #main .left .contact .head {
+      font-weight: bold;
+    }
+
+    #main .left .contact-item {
+      padding: 0 15px;
+      margin: 10px 0 6px 0;
+      font-size: 13px;
+    }
+
+    #main .left .contact-item .icon {
+      width: 20px;
+      font-size: 15px;
+    }
+  </style>
+</html>

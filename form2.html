@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="form-example">
+      <div class="container">
+        <div class="title">Ví dụ về tạo form</div>
+        <div class="input">
+          <div class="label">Text box:</div>
+          <input class="text-box-input" type="text" name="" id="" />
+        </div>
+        <div class="input">
+          <div class="label">Text area:</div>
+          <textarea class="textarea-input" name="" id="" rows="2"></textarea>
+        </div>
+        <div class="input">
+          <div class="label">File box:</div>
+          <input class="short-text-box-input" type="text" name="" id="" />
+          <input class="button-item" type="button" value="Browser" />
+        </div>
+        <div class="click-input">
+          <input type="radio" name="" id="" />Radio button
+        </div>
+        <div class="click-input">
+          <input type="checkbox" name="" id="" />Check box
+        </div>
+        <div class="button">
+          <input class="left-button button-item" type="button" value="Submit" />
+          <input class="right-button button-item" type="button" value="Reset" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    #form-example {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #form-example .container {
+      background-color: #abddde;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      width: 400px;
+      box-shadow: 10px 10px 5px 1px #888888;
+    }
+
+    #form-example .title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: crimson;
+      text-transform: uppercase;
+    }
+
+    #form-example .input {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    #form-example .text-box-input,
+    #form-example .textarea-input {
+      width: 300px;
+    }
+
+    #form-example .short-text-box-input {
+      width: 180px;
+    }
+
+    #form-example .click-input {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    #form-example .button {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    #form-example .button-item:hover {
+      cursor: pointer;
+      background-color: aquamarine;
+    }
+
+    #form-example .button-item:active {
+      cursor: pointer;
+      background-color: aquamarine;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    #form-example .button-item {
+      font-weight: bold;
+      font-size: 16px;
+      background-color: blanchedalmond;
+      border-radius: 5px;
+      box-shadow: 0 5px #999;
+    }
+
+    #form-example .left-button {
+      margin-right: 10px;
+    }
+
+    #form-example .right-button {
+      margin-left: 10px;
+    }
+  </style>
+</html>
